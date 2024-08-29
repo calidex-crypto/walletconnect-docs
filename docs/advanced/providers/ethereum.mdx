@@ -22,9 +22,9 @@ import { EthereumProvider } from '@walletconnect/ethereum-provider'
 const provider = await EthereumProvider.init({
   projectId: 'YOUR_PROJECT_ID',
   metadata: {
-    name: 'My Website',
+    name: 'Cali Defi X',
     description: 'My Website Description',
-    url: 'https://mywebsite.com', // origin must match your domain & subdomain
+    url: 'https://buyfromcali.com', // origin must match your domain & subdomain
     icons: ['https://avatars.githubusercontent.com/u/37784886']
   },
   showQrModal: true,
@@ -32,8 +32,8 @@ const provider = await EthereumProvider.init({
 
   /*Optional - Add custom RPCs for each supported chain*/
   rpcMap: {
-    1: 'mainnet.rpc...',
-    137: 'polygon.rpc...'
+    1: 'https://virtual.mainnet.rpc.tenderly.co/eb24f6ac-81d3-4d0e-a640-83e9414ee0d0',
+    137: 'https://virtual.polygon.rpc.tenderly.co/ea55feb5-6da1-42d0-8875-3d2f8c874e17'
   }
 })
 ```
